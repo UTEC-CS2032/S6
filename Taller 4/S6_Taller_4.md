@@ -2,7 +2,7 @@
 marp: true
 theme: utec
 paginate: false
-header: "UTEC | > Reinventa el mundo <"
+header: '![h:80px](../icon.png) <span class="header-right"><span class="chev">&gt;</span> Reinventa el Mundo <span class="chev">&lt;</span></span>'
 ---
 <!-- _class: portada -->
 

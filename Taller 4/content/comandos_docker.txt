@@ -1,0 +1,14 @@
+docker run -d --rm --name mongo_c -p 27017:27017 -v mongo_data:/data/db mongo:latest
+docker volume ls
+docker logs mongo_c
+
+docker build -t api-fruits .
+
+docker login -u gcolchado
+docker tag api-fruits gcolchado/api-fruits
+docker push gcolchado/api-fruits
+docker logout
+
+docker run -d --rm --name api-fruits_c -p 8001:8001 gcolchado/api-fruits
+docker  logs  api-fruits_c
+
